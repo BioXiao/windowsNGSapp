@@ -1,0 +1,25 @@
+#! /bin/sh
+
+export PATH=bin
+
+export DIR_4_TCOFFEE=$PWD
+
+echo $DIR_4_TCOFFEE
+
+export MAFFT_BINARIES="$DIR_4_TCOFFEE/plugins/windows/"
+
+echo $MAFFT_BINARIES
+
+export CACHE_4_TCOFFEE="~/.t_coffee/cache/"
+
+echo $CACHE_4_TCOFFEE
+
+if [ -d "$CACHE_4_TCOFFEE" ]; then
+	mkdir $CACHE_4_TCOFFEE
+fi
+
+export PERL5LIB="$PERL5LIB:$DIR_4_TCOFFEE/perl"
+
+echo $PERL5LIB
+
+bin/t_coffee.orig.exe $*

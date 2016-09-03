@@ -1,0 +1,16 @@
+To run CAP3 on Windows, you need to download CYGWIN,
+a Linux similator on Windows at http://www.cygwin.com,
+and run CAP3 on CYGWIN.
+
+
+doc: document for CAP3 and FORMCON
+
+aceform: document on .ace format.
+
+example: a directory with a small data set
+
+Note that CAP3 can be used in a similar way as Phrap, where
+Phred is used for base calls, CAP3 for assembly, and Consed for
+viewing ace format output of CAP3.
+
+For questions on CAP3, please contact Xiaoqiu Huang at xqhuang@cs.iastate.edu
